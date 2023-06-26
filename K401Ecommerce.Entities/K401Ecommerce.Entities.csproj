@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Concrete\" />
+    <None Remove="DTOs\" />
+    <None Remove="DTOs\CategoryDTOs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\CategoryDTOs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\K401Ecommerce.Core\K401Ecommerce.Core.csproj" />
+  </ItemGroup>
+</Project>

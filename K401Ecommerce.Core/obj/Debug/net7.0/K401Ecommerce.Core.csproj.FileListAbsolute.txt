@@ -1,0 +1,12 @@
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/bin/Debug/net7.0/K401Ecommerce.Core.deps.json
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/bin/Debug/net7.0/K401Ecommerce.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/bin/Debug/net7.0/K401Ecommerce.Core.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/K401Ecommerce.Core.csproj.AssemblyReference.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/K401Ecommerce.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/K401Ecommerce.Core.AssemblyInfoInputs.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/K401Ecommerce.Core.AssemblyInfo.cs
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/K401Ecommerce.Core.csproj.CoreCompileInputs.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/K401Ecommerce.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/refint/K401Ecommerce.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/K401Ecommerce.Core.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Core/obj/Debug/net7.0/ref/K401Ecommerce.Core.dll

@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "K401Ecommerce.WebUI/1.0.0": {
+        "dependencies": {
+          "K401Ecommerce.Business": "1.0.0"
+        },
+        "runtime": {
+          "K401Ecommerce.WebUI.dll": {}
+        }
+      },
+      "K401Ecommerce.Business/1.0.0": {
+        "dependencies": {
+          "K401Ecommerce.Core": "1.0.0",
+          "K401Ecommerce.DataAccess": "1.0.0",
+          "K401Ecommerce.Entities": "1.0.0"
+        },
+        "runtime": {
+          "K401Ecommerce.Business.dll": {}
+        }
+      },
+      "K401Ecommerce.Core/1.0.0": {
+        "runtime": {
+          "K401Ecommerce.Core.dll": {}
+        }
+      },
+      "K401Ecommerce.DataAccess/1.0.0": {
+        "dependencies": {
+          "K401Ecommerce.Core": "1.0.0",
+          "K401Ecommerce.Entities": "1.0.0"
+        },
+        "runtime": {
+          "K401Ecommerce.DataAccess.dll": {}
+        }
+      },
+      "K401Ecommerce.Entities/1.0.0": {
+        "runtime": {
+          "K401Ecommerce.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "K401Ecommerce.WebUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "K401Ecommerce.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "K401Ecommerce.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "K401Ecommerce.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "K401Ecommerce.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

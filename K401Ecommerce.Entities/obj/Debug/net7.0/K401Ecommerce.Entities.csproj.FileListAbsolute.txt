@@ -1,0 +1,15 @@
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/bin/Debug/net7.0/K401Ecommerce.Entities.deps.json
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/bin/Debug/net7.0/K401Ecommerce.Entities.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/bin/Debug/net7.0/K401Ecommerce.Entities.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.csproj.AssemblyReference.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.AssemblyInfoInputs.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.AssemblyInfo.cs
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.csproj.CoreCompileInputs.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/refint/K401Ecommerce.Entities.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/ref/K401Ecommerce.Entities.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/bin/Debug/net7.0/K401Ecommerce.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/bin/Debug/net7.0/K401Ecommerce.Core.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Entities/obj/Debug/net7.0/K401Ecommerce.Entities.csproj.CopyComplete

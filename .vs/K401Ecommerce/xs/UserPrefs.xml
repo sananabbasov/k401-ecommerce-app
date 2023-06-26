@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{CE63BC64-CB19-4769-877D-6E8F081441D6}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs">
+    <Files>
+      <File FileName="K401Ecommerce.Entities/DTOs/CategoryDTOs/CategoryHomeListDTO.cs" Line="4" Column="15" />
+      <File FileName="K401Ecommerce.DataAccess/Abstract/ICategoryDal.cs" Line="10" Column="27" />
+      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" Line="19" Column="48" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="K401Ecommerce" expanded="True">
+            <Node name="K401Ecommerce.DataAccess">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="EntityFramework" expanded="True">
+                  <Node name="EfCategoryDal.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="K401Ecommerce.Entities">
+              <Node name="DTOs" expanded="True">
+                <Node name="CategoryDTOs" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
