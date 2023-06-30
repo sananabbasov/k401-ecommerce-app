@@ -2,6 +2,7 @@
 using K401Ecommerce.Business.Abstract;
 using K401Ecommerce.DataAccess.Abstract;
 using K401Ecommerce.Entities.Concrete;
+using K401Ecommerce.Entities.DTOs.CategoryDTOs;
 
 namespace K401Ecommerce.Business.Concrete
 {
@@ -14,10 +15,9 @@ namespace K401Ecommerce.Business.Concrete
             _categoryDal = categoryDal;
         }
 
-        public void AddCategory(Category category)
+        public void AddCategory(CategoryAddDTO category)
         {
-            _categoryDal.GetAll();
-            _categoryDal.Add(category);
+            _categoryDal.AddCategory(category);
         }
 
         public void DeleteCategory(Category category)
@@ -25,14 +25,15 @@ namespace K401Ecommerce.Business.Concrete
             throw new NotImplementedException();
         }
 
-        public List<Category> GetCategories(string langcode)
+        public List<CategoryHomeListDTO> GetCategories(string langcode)
         {
-            throw new NotImplementedException();
+            return _categoryDal.GetCategorieByLanguage(langcode);
         }
 
         public List<Category> GetNavbarCategories(string langcode)
         {
             throw new NotImplementedException();
+
         }
 
         public void UpdateCategory(Category category)

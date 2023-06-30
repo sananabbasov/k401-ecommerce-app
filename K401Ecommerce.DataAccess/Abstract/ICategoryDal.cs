@@ -8,6 +8,7 @@ namespace K401Ecommerce.DataAccess.Abstract
 	public interface ICategoryDal : IRepositoryBase<Category>
 	{
 		List<CategoryHomeListDTO> GetCategorieByLanguage(string langcode);
+		Task<bool> AddCategory(CategoryAddDTO categoryAddDTO);
 	}
 }
 

@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
-builder.Services.AddScoped<ICategoryDal, SlCategoryDal>();
+builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
 
 
 var app = builder.Build();
@@ -31,9 +31,18 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseEndpoints(endpoint =>
+{
+endpoint.MapControllerRoute(
+     name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}/{seourl?}"
+   );
+});
+
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}/{seourl?}");
 
 app.Run();
 

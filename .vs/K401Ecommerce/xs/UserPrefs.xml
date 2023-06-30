@@ -1,37 +1,54 @@
 ﻿<Properties StartupConfiguration="{CE63BC64-CB19-4769-877D-6E8F081441D6}|https">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" relfile="K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" line="35" column="1" />
+      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Business/Concrete/CategoryManager.cs" relfile="K401Ecommerce.Business/Concrete/CategoryManager.cs" line="19" column="1" />
+      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" relfile="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" line="12" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs">
     <Files>
-      <File FileName="K401Ecommerce.Entities/DTOs/CategoryDTOs/CategoryHomeListDTO.cs" Line="4" Column="15" />
-      <File FileName="K401Ecommerce.DataAccess/Abstract/ICategoryDal.cs" Line="10" Column="27" />
-      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" Line="19" Column="48" />
+      <File FileName="K401Ecommerce.WebUI/Controllers/HomeController.cs" Line="22" Column="60" />
+      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" Line="36" Column="1" />
+      <File FileName="K401Ecommerce.Business/Concrete/CategoryManager.cs" Line="20" Column="1" />
+      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" Line="46" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="K401Ecommerce" expanded="True">
-            <Node name="K401Ecommerce.DataAccess">
+            <Node name="K401Ecommerce.Business">
               <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" expanded="True" />
+            </Node>
+            <Node name="K401Ecommerce.DataAccess">
               <Node name="Concrete" expanded="True">
                 <Node name="EntityFramework" expanded="True">
                   <Node name="EfCategoryDal.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="K401Ecommerce.Entities">
+            <Node name="K401Ecommerce.Entities" expanded="True">
+              <Node name="Concrete" expanded="True" />
               <Node name="DTOs" expanded="True">
                 <Node name="CategoryDTOs" expanded="True" />
               </Node>
+            </Node>
+            <Node name="K401Ecommerce.WebUI">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

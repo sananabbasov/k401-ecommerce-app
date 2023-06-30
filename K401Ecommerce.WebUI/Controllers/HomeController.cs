@@ -5,7 +5,7 @@ using K401Ecommerce.Business.Abstract;
 using K401Ecommerce.Entities.Concrete;
 
 namespace K401Ecommerce.WebUI.Controllers;
-
+ 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -19,9 +19,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        Category category = new();
-        _categoryService.AddCategory(category);
-        return View();
+        var categories = _categoryService.GetCategories("Ru");
+        return View(categories);
     }
 
     public IActionResult Privacy()

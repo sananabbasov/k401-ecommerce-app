@@ -13,4 +13,28 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Areas\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Areas\Admin\Views\Home\" />
+    <None Remove="Areas\Admin\Views\Category\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Home\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="wwwroot\admin\" />
+    <Folder Include="Areas\Admin\Views\Category\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\" />
+    <Content Remove="wwwroot\admin\" />
+  </ItemGroup>
 </Project>
