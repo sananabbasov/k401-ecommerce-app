@@ -14,6 +14,8 @@ namespace K401Ecommerce.Entities.Concrete
 		public string UserId { get; set; }
 		public User User { get; set; }
 		public bool IsFeatured { get; set; }
+		public List<ProductLanguage> ProductLanguages { get; set; }
+		public List<Picture> Pictures { get; set; }
 	}
 }
 

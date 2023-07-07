@@ -21,6 +21,11 @@
     <None Remove="Areas\Admin\Views\Shared\" />
     <None Remove="Areas\Admin\Views\Home\" />
     <None Remove="Areas\Admin\Views\Category\" />
+    <None Remove="Views\Auth\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\UserAuth\" />
+    <None Remove="Areas\Admin\Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -32,6 +37,11 @@
     <Folder Include="wwwroot\assets\" />
     <Folder Include="wwwroot\admin\" />
     <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\UserAuth\" />
+    <Folder Include="Areas\Admin\Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\" />

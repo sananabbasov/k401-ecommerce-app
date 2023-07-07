@@ -7341,6 +7341,226 @@
       "PackagePath": "staticwebassets/admin/vendor/jquery/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/.DS_Store",
+      "PackagePath": "staticwebassets/assets/.DS_Store"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/bootstrap.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/style.css",
+      "PackagePath": "staticwebassets/assets/css/style.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/css/style.min.css",
+      "PackagePath": "staticwebassets/assets/css/style.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/carousel-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/carousel-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/carousel-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/carousel-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/carousel-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/carousel-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/cat-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/cat-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/cat-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/cat-4.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-4.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/offer-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/offer-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/offer-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/offer-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/payments.png",
+      "PackagePath": "staticwebassets/assets/img/payments.png"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-4.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-4.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-5.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-5.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-6.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-6.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-7.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-7.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-8.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-8.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/product-9.jpg",
+      "PackagePath": "staticwebassets/assets/img/product-9.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/user.jpg",
+      "PackagePath": "staticwebassets/assets/img/user.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-4.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-4.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-5.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-5.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-6.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-6.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-7.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-7.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/img/vendor-8.jpg",
+      "PackagePath": "staticwebassets/assets/img/vendor-8.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/js/main.js",
+      "PackagePath": "staticwebassets/assets/js/main.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/animate/animate.min.css",
+      "PackagePath": "staticwebassets/assets/lib/animate/animate.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/easing/easing.js",
+      "PackagePath": "staticwebassets/assets/lib/easing/easing.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/easing/easing.min.js",
+      "PackagePath": "staticwebassets/assets/lib/easing/easing.min.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/LICENSE",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/ajax-loader.gif",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/ajax-loader.gif"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/owl.carousel.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.carousel.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/owl.theme.default.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.default.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.default.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/owl.theme.green.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.green.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.green.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/assets/owl.video.play.png",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.video.play.png"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/owl.carousel.js",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/owl.carousel.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/lib/owlcarousel/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/mail/.DS_Store",
+      "PackagePath": "staticwebassets/assets/mail/.DS_Store"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/mail/contact.js",
+      "PackagePath": "staticwebassets/assets/mail/contact.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/wwwroot/assets/mail/jqBootstrapValidation.min.js",
+      "PackagePath": "staticwebassets/assets/mail/jqBootstrapValidation.min.js"
+    },
+    {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.K401Ecommerce.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

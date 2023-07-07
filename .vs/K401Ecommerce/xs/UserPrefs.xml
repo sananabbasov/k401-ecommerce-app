@@ -1,54 +1,61 @@
 ﻿<Properties StartupConfiguration="{CE63BC64-CB19-4769-877D-6E8F081441D6}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" relfile="K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" line="35" column="1" />
-      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Business/Concrete/CategoryManager.cs" relfile="K401Ecommerce.Business/Concrete/CategoryManager.cs" line="19" column="1" />
-      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" relfile="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" line="12" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.WebUI/Areas/Admin/Views/Product/Index.cshtml">
     <Files>
-      <File FileName="K401Ecommerce.WebUI/Controllers/HomeController.cs" Line="22" Column="60" />
-      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" Line="36" Column="1" />
-      <File FileName="K401Ecommerce.Business/Concrete/CategoryManager.cs" Line="20" Column="1" />
-      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" Line="46" Column="1" />
+      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Views/Shared/_AdminLayout.cshtml" Line="69" Column="34" />
+      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Controllers/ProductController.cs" Line="30" Column="36" />
+      <File FileName="K401Ecommerce.Entities/DTOs/ProductDTOs/ProductAdminListDTO.cs" Line="4" Column="15" />
+      <File FileName="K401Ecommerce.Entities/Concrete/Product.cs" Line="18" Column="23" />
+      <File FileName="K401Ecommerce.DataAccess/Abstract/IProductDal.cs" Line="11" Column="42" />
+      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfProductDal.cs" Line="40" Column="80" />
+      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfCategoryDal.cs" Line="13" Column="1" />
+      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/AppDbContext.cs" Line="9" Column="15" />
+      <File FileName="K401Ecommerce.Entities/Concrete/ProductLanguage.cs" Line="14" Column="39" />
+      <File FileName="K401Ecommerce.Entities/Concrete/Picture.cs" Line="4" Column="15" />
+      <File FileName="K401Ecommerce.Entities/Concrete/Category.cs" Line="9" Column="50" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/ErrorDataResult.cs" Line="13" Column="10" />
+      <File FileName="K401Ecommerce.Business/Abstract/IProductService.cs" Line="9" Column="75" />
+      <File FileName="K401Ecommerce.Business/Concrete/ProductManager.cs" Line="21" Column="21" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/SuccessDataResult.cs" Line="6" Column="45" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/DataResult.cs" Line="6" Column="37" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/Result.cs" Line="6" Column="18" />
+      <File FileName="K401Ecommerce.WebUI/Program.cs" Line="23" Column="27" />
+      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Views/_ViewImports.cshtml" Line="5" Column="1" />
+      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Views/Product/Index.cshtml" Line="49" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="K401Ecommerce" expanded="True">
-            <Node name="K401Ecommerce.Business">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
-            </Node>
-            <Node name="K401Ecommerce.DataAccess">
-              <Node name="Concrete" expanded="True">
-                <Node name="EntityFramework" expanded="True">
-                  <Node name="EfCategoryDal.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
             <Node name="K401Ecommerce.Entities" expanded="True">
-              <Node name="Concrete" expanded="True" />
               <Node name="DTOs" expanded="True">
-                <Node name="CategoryDTOs" expanded="True" />
+                <Node name="ProductDTOs" expanded="True" />
               </Node>
             </Node>
             <Node name="K401Ecommerce.WebUI">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
+              <Node name="Areas">
+                <Node name="Admin">
                   <Node name="Controllers" expanded="True" />
+                  <Node name="Views">
+                    <Node name="Product" expanded="True">
+                      <Node name="Index.cshtml" selected="True" />
+                    </Node>
+                  </Node>
                 </Node>
               </Node>
-              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" relfile="K401Ecommerce.WebUI/Areas/Admin/Controllers/CategoryController.cs" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

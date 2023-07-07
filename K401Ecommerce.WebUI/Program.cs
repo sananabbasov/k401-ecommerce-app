@@ -3,16 +3,28 @@ using K401Ecommerce.Business.Concrete;
 using K401Ecommerce.DataAccess.Abstract;
 using K401Ecommerce.DataAccess.Concrete.EntityFramework;
 using K401Ecommerce.DataAccess.Concrete.SqlLite;
+using K401Ecommerce.Entities.Concrete;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDefaultIdentity<User>().AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>();
+
+
 
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
 
+builder.Services.AddScoped<IProductService, ProductManager>();
+builder.Services.AddScoped<IProductDal, EfProductDal>();
+
+
+
+builder.Services.AddScoped<AppDbContext>();
 
 var app = builder.Build();
 

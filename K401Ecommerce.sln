@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K401Ecommerce.Core", "K401E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K401Ecommerce.WebUI", "K401Ecommerce.WebUI\K401Ecommerce.WebUI.csproj", "{CE63BC64-CB19-4769-877D-6E8F081441D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K401Ecommerce.WebAPI", "K401Ecommerce.WebAPI\K401Ecommerce.WebAPI.csproj", "{3D8076CB-D111-42E9-A667-CAA9FDB432E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CE63BC64-CB19-4769-877D-6E8F081441D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE63BC64-CB19-4769-877D-6E8F081441D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE63BC64-CB19-4769-877D-6E8F081441D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8076CB-D111-42E9-A667-CAA9FDB432E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8076CB-D111-42E9-A667-CAA9FDB432E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8076CB-D111-42E9-A667-CAA9FDB432E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8076CB-D111-42E9-A667-CAA9FDB432E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

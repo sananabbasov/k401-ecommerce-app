@@ -10,11 +10,15 @@
     <None Remove="Concrete\" />
     <None Remove="DTOs\" />
     <None Remove="DTOs\CategoryDTOs\" />
+    <None Remove="DTOs\UserDTOs\" />
+    <None Remove="DTOs\ProductDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\CategoryDTOs\" />
+    <Folder Include="DTOs\UserDTOs\" />
+    <Folder Include="DTOs\ProductDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\K401Ecommerce.Core\K401Ecommerce.Core.csproj" />

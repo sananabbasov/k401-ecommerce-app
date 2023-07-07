@@ -20,7 +20,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         var categories = _categoryService.GetCategories("Ru");
-        return View(categories);
+        return View(categories.Data);
     }
 
     public IActionResult Privacy()

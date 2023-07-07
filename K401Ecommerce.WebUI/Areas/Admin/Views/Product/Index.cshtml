@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ProductAdminListDTO>
+
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Photo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Discount</th>
+            <th scope="col">Views</th>
+            <th scope="col">CategoryName</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int count = 0;
+
+            if (Model != null)
+            {
+                foreach (var product in Model)
+                {
+                    count++;
+                    <tr>
+                        <th scope="row">@count</th>
+                        <td>
+                            <img src="@product.PhotoUrl" width="80" height="80" />
+                        </td>
+                        <td>@product.Name</td>
+                        <td>@product.Price</td>
+                        <td>@product.Discount</td>
+                        <td>@product.View</td>
+                        <td>@product.CategoryName</td>
+                        <td>
+                            <a href="/admin/product/edit/@product.Id" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="/admin/product/delete/@product.Id" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <div class="alert alert-warning">Product not found</div>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

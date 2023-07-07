@@ -33,8 +33,10 @@ namespace K401Ecommerce.WebUI.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(CategoryAddDTO category)
         {
-            _categoryService.AddCategory(category);
-            return RedirectToAction("Index");
+            var result = _categoryService.AddCategory(category);
+            if (result.Success)
+                return RedirectToAction("Index");
+            return View(category);
         }
     }
 }

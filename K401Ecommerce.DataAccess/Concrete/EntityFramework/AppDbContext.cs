@@ -16,8 +16,8 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<CategoryLanguage> CategoryLanguages { get; set; }
-        public DbSet<Product> Producs { get; set; }
-        public DbSet<ProductLanguage> ProducLanguages { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductLanguage> ProductLanguages { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Picture> Pictures { get; set; }
 
