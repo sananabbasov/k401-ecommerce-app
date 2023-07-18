@@ -3,6 +3,7 @@ using K401Ecommerce.Entities.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using static K401Ecommerce.Entities.DTOs.ProductDTOs.ProductDTO;
 
 namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
 {
@@ -28,6 +29,8 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
             base.OnModelCreating(builder);
             builder.Entity<User>().ToTable("Users");
             builder.Entity<IdentityRole>().ToTable("Roles");
+
+            builder.Entity<ProductRecentDTO>().ToView(null);
         }
     }
 }

@@ -26,6 +26,8 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\UserAuth\" />
     <None Remove="Areas\Admin\Views\Product\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -42,9 +44,13 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\UserAuth\" />
     <Folder Include="Areas\Admin\Views\Product\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\" />
     <Content Remove="wwwroot\admin\" />
+    <Content Remove="wwwroot\uploads\" />
   </ItemGroup>
 </Project>

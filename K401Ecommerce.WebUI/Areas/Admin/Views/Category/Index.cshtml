@@ -1,1 +1,49 @@
-﻿
+﻿@model IEnumerable<CategoryAdminListDTO>
+
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Photo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Product count</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int count = 0;
+
+            if (Model != null)
+            {
+                foreach (var category in Model)
+                {
+                    count++;
+                    <tr>
+                        <th scope="row">@count</th>
+                        <td>
+                            <img src="@category.PhotoUrl" width="80" height="80" />
+                        </td>
+                        <td>@category.CategoryName</td>
+                        <td>@category.ProductCount</td>
+                        <td>@category.IsFeatured</td>
+                        <td>
+                            <a href="/admin/category/edit/@category.Id" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="/admin/category/delete/@category.Id" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <div class="alert alert-warning">Product not found</div>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

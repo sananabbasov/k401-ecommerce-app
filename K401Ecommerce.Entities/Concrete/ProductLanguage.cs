@@ -8,8 +8,6 @@ namespace K401Ecommerce.Entities.Concrete
 		public string Description { get; set; }
 		public string LangCode { get; set; }
 		public string SeoUrl { get; set; }
-		public int CategoryId { get; set; }
-		public Category Category { get; set; }
 		public int ProductId { get; set; }
 		public Product Product { get; set; }
 	}

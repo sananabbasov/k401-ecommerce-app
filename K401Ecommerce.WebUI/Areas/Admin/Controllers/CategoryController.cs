@@ -23,7 +23,8 @@ namespace K401Ecommerce.WebUI.Areas.Admin.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            var categories = _categoryService.GetAdminCategoriesByLanguage("Az");
+            return View(categories.Data);
         }
         public IActionResult Create()
         {

@@ -1,6 +1,8 @@
 ﻿using K401Ecommerce.Business.Abstract;
 using K401Ecommerce.Business.Concrete;
 using K401Ecommerce.DataAccess.Abstract;
+using K401Ecommerce.DataAccess.Abstract.DataSeeding;
+using K401Ecommerce.DataAccess.Concrete.DataSeeding;
 using K401Ecommerce.DataAccess.Concrete.EntityFramework;
 using K401Ecommerce.DataAccess.Concrete.SqlLite;
 using K401Ecommerce.Entities.Concrete;
@@ -23,8 +25,11 @@ builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<IProductDal, EfProductDal>();
 
 
+builder.Services.AddScoped<IDataSeeder, EfDataSeeder>();
 
 builder.Services.AddScoped<AppDbContext>();
+
+
 
 var app = builder.Build();
 

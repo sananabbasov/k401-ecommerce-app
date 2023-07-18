@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -128,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -219,7 +219,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -277,7 +277,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -298,7 +298,7 @@
         ],
         "sources": {
           "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -339,7 +339,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     }

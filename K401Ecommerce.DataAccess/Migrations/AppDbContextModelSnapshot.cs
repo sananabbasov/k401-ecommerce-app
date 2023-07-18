@@ -166,7 +166,7 @@ namespace K401Ecommerce.DataAccess.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Producs");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("K401Ecommerce.Entities.Concrete.ProductLanguage", b =>
@@ -176,9 +176,6 @@ namespace K401Ecommerce.DataAccess.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -192,15 +189,18 @@ namespace K401Ecommerce.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SeoUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("ProductId");
 
-                    b.ToTable("ProducLanguages");
+                    b.ToTable("ProductLanguages");
                 });
 
             modelBuilder.Entity("K401Ecommerce.Entities.Concrete.User", b =>
@@ -416,7 +416,7 @@ namespace K401Ecommerce.DataAccess.Migrations
             modelBuilder.Entity("K401Ecommerce.Entities.Concrete.CategoryLanguage", b =>
                 {
                     b.HasOne("K401Ecommerce.Entities.Concrete.Category", "Category")
-                        .WithMany()
+                        .WithMany("CategoryLanguages")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -444,7 +444,7 @@ namespace K401Ecommerce.DataAccess.Migrations
             modelBuilder.Entity("K401Ecommerce.Entities.Concrete.Picture", b =>
                 {
                     b.HasOne("K401Ecommerce.Entities.Concrete.Product", "Product")
-                        .WithMany()
+                        .WithMany("Pictures")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -473,13 +473,13 @@ namespace K401Ecommerce.DataAccess.Migrations
 
             modelBuilder.Entity("K401Ecommerce.Entities.Concrete.ProductLanguage", b =>
                 {
-                    b.HasOne("K401Ecommerce.Entities.Concrete.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
+                    b.HasOne("K401Ecommerce.Entities.Concrete.Product", "Product")
+                        .WithMany("ProductLanguages")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -531,6 +531,18 @@ namespace K401Ecommerce.DataAccess.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("K401Ecommerce.Entities.Concrete.Category", b =>
+                {
+                    b.Navigation("CategoryLanguages");
+                });
+
+            modelBuilder.Entity("K401Ecommerce.Entities.Concrete.Product", b =>
+                {
+                    b.Navigation("Pictures");
+
+                    b.Navigation("ProductLanguages");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,12 +11,18 @@
     <None Remove="Concrete\" />
     <None Remove="Concrete\EntityFramework\" />
     <None Remove="Concrete\SqlLite\" />
+    <None Remove="DataSeeding\" />
+    <None Remove="DataSeeding\Abstract\" />
+    <None Remove="DataSeeding\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
     <Folder Include="Concrete\EntityFramework\" />
     <Folder Include="Concrete\SqlLite\" />
+    <Folder Include="DataSeeding\" />
+    <Folder Include="DataSeeding\Abstract\" />
+    <Folder Include="DataSeeding\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\K401Ecommerce.Core\K401Ecommerce.Core.csproj" />

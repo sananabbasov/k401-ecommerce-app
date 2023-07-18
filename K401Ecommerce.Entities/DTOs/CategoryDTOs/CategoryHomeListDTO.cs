@@ -3,6 +3,7 @@ namespace K401Ecommerce.Entities.DTOs.CategoryDTOs
 {
 	public class CategoryHomeListDTO
 	{
+
 		public int Id { get; set; }
 		public string CategoryName { get; set; }
 		public string SeoUrl { get; set; }
