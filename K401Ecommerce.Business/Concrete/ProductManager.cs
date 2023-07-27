@@ -67,6 +67,14 @@ namespace K401Ecommerce.Business.Concrete
             }
         }
 
+        public IDataResult<int> GetProductCount(double take, List<int> cats)
+        {
+
+            double productCountResult = _productDal.GetProductCount(take,cats) / take;
+            int  productCount = (int)Math.Ceiling(productCountResult);
+            return new SuccessDataResult<int>(productCount);
+        }
+
         public IDataResult<ProductDetailDTO> GetProductDetailById(string langcode, int id)
         {
             try

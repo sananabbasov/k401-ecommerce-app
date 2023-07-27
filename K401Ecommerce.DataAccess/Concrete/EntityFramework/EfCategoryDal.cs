@@ -83,6 +83,18 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
             
         }
 
+        public List<CategoryFilterDTO> GetFilterCategories(string langcode)
+        {
+            using var context = new AppDbContext();
+            var result = context.Categories.Include(x=>x.CategoryLanguages).Select(x => new CategoryFilterDTO
+            {
+                Id = x.Id,
+                CategoryName = x.CategoryLanguages.FirstOrDefault(x=>x.LangCode == langcode).CategoryName
+            }).ToList();
+
+            return result;
+        }
+
         public List<CategoryFeaturedHomeDTO> GetHomeCategoryByLanguage(string langcode)
         {
             using var context = new AppDbContext();

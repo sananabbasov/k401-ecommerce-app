@@ -1,40 +1,13 @@
 ﻿<Properties StartupConfiguration="{CE63BC64-CB19-4769-877D-6E8F081441D6}|https">
-  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfProductDal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.Business/Concrete/ProductManager.cs">
     <Files>
-      <File FileName="K401Ecommerce.Entities/DTOs/ProductDTOs/ProductDetailDTO.cs" />
-      <File FileName="K401Ecommerce.DataAccess/Abstract/ICategoryDal.cs" />
-      <File FileName="K401Ecommerce.DataAccess/Abstract/IProductDal.cs" Line="17" Column="48" />
-      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfProductDal.cs" Line="59" Column="13" />
-      <File FileName="K401Ecommerce.Business/Abstract/IProductService.cs" Line="16" Column="52" />
-      <File FileName="K401Ecommerce.Business/Concrete/ProductManager.cs" Line="61" Column="52" />
-      <File FileName="K401Ecommerce.WebUI/ViewModels/DetailVM.cs" />
-      <File FileName="K401Ecommerce.WebUI/Views/_ViewImports.cshtml" />
-      <File FileName="K401Ecommerce.WebUI/Controllers/ProductController.cs" Line="31" Column="62" />
-      <File FileName="K401Ecommerce.WebUI/Views/Product/Detail.cshtml" />
-      <File FileName="K401Ecommerce.WebUI/Controllers/AuthController.cs" />
-      <File FileName="K401Ecommerce.WebUI/Controllers/HomeController.cs" />
-      <File FileName="K401Ecommerce.Entities/Concrete/Product.cs" Line="13" Column="27" />
-      <File FileName="K401Ecommerce.Entities/Concrete/CategoryLanguage.cs" />
-      <File FileName="K401Ecommerce.Entities/Concrete/ProductLanguage.cs" />
-      <File FileName="K401Ecommerce.WebUI/Program.cs" />
-      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Controllers/ProductController.cs" Line="46" Column="1" />
-      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Views/Product/Create.cshtml" Line="111" Column="65" />
-      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Views/Shared/_AdminLayout.cshtml" />
-      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Controllers/HomeController.cs" Line="13" Column="6" />
-      <File FileName="K401Ecommerce.WebUI/Areas/Admin/Controllers/PictureController.cs" Line="23" Column="1" />
-      <File FileName="K401Ecommerce.Entities/DTOs/ProductDTOs/ProductDTO.cs" Line="13" Column="1" />
-      <File FileName="K401Ecommerce.Entities/Concrete/Picture.cs" Line="7" Column="25" />
-      <File FileName="../../../../K101/Templates/online-shop-website-template/shop.html" Line="177" Column="1" />
-      <File FileName="K401Ecommerce.WebUI/Views/Product/Index.cshtml" Line="420" Column="18" />
-      <File FileName="K401Ecommerce.WebUI/Views/Home/Index.cshtml" Line="208" Column="140" />
-      <File FileName="K401Ecommerce.Entities/DTOs/ProductDTOs/ProductFIlterDTO.cs" Line="4" Column="15" />
-      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/AppDbContext.cs" Line="20" Column="26" />
+      <File FileName="K401Ecommerce.WebUI/Views/Product/Index.cshtml" Line="218" Column="57" />
+      <File FileName="K401Ecommerce.WebUI/ViewModels/PaginationVM.cs" Line="9" Column="21" />
+      <File FileName="K401Ecommerce.WebUI/Controllers/ProductController.cs" Line="31" Column="39" />
+      <File FileName="K401Ecommerce.Business/Concrete/ProductManager.cs" Line="73" Column="63" />
+      <File FileName="K401Ecommerce.Business/Abstract/IProductService.cs" Line="17" Column="41" />
+      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfProductDal.cs" Line="110" Column="20" />
+      <File FileName="K401Ecommerce.DataAccess/Abstract/IProductDal.cs" Line="20" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -42,30 +15,35 @@
           <Node name="K401Ecommerce" expanded="True">
             <Node name="K401Ecommerce.Business">
               <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="ProductManager.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="K401Ecommerce.DataAccess">
               <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True">
-                <Node name="EntityFramework" expanded="True">
-                  <Node name="EfProductDal.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="K401Ecommerce.Entities">
-              <Node name="Concrete" expanded="True" />
-              <Node name="DTOs">
-                <Node name="ProductDTOs" expanded="True" />
+                <Node name="EntityFramework" expanded="True" />
               </Node>
             </Node>
             <Node name="K401Ecommerce.WebUI">
               <Node name="Controllers" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Product" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

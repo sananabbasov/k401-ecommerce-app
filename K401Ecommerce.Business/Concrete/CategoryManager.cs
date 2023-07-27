@@ -5,6 +5,7 @@ using K401Ecommerce.Core.Utilities.Results.Concrete;
 using K401Ecommerce.DataAccess.Abstract;
 using K401Ecommerce.Entities.Concrete;
 using K401Ecommerce.Entities.DTOs.CategoryDTOs;
+using Microsoft.AspNetCore.Authorization;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using static K401Ecommerce.Entities.DTOs.CategoryDTOs.CategoryDTO;
 
@@ -55,6 +56,12 @@ namespace K401Ecommerce.Business.Concrete
         {
             var result = _categoryDal.GetCategorieByLanguage(langcode);
             return new SuccessDataResult<List<CategoryHomeListDTO>>(result);
+        }
+
+        public IDataResult<List<CategoryFilterDTO>> GetCategoriesForFilter(string langcode)
+        {
+            var data = _categoryDal.GetFilterCategories(langcode);
+            return new SuccessDataResult<List<CategoryFilterDTO>>(data);
         }
 
         public IDataResult<List<CategoryFeaturedHomeDTO>> GetHomeFeaturedCategoriesByLanguage(string langcode)

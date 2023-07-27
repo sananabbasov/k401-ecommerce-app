@@ -12,6 +12,7 @@ namespace K401Ecommerce.DataAccess.Abstract
 		List<CategoryAdminListDTO> GetAdminCategoryList(string langcode);
 		Task<bool> AddCategory(CategoryAddDTO categoryAddDTO);
 		List<CategoryFeaturedHomeDTO> GetHomeCategoryByLanguage(string langcode);
+		List<CategoryFilterDTO> GetFilterCategories(string langcode);
 	}
 }
 

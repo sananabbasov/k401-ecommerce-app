@@ -13,6 +13,9 @@ namespace K401Ecommerce.Business.Abstract
         IDataResult<List<ProductRecentDTO>> GetAllRecentProduct(string langcode);
         IDataResult<ProductDetailDTO> GetProductDetailById(string langcode, int id);
 
+        // Get product count 
+        IDataResult<int> GetProductCount(double take, List<int> cats);
+
         IDataResult<IEnumerable<ProductFilterDTO>> GetFilterProductsByLanguage(string langcode, decimal minPrice, decimal maxPrice, List<int> categoryIds, int pageNo, int take);
     }
 }

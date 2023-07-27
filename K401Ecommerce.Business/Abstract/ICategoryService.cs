@@ -15,6 +15,7 @@ namespace K401Ecommerce.Business.Abstract
         IDataResult<List<CategoryHomeListDTO>> GetCategories(string langcode);
         IDataResult<List<Category>> GetNavbarCategories(string langcode);
         IDataResult<List<CategoryFeaturedHomeDTO>> GetHomeFeaturedCategoriesByLanguage(string langcode);
+        IDataResult<List<CategoryFilterDTO>> GetCategoriesForFilter(string langcode);
     }
 }
 

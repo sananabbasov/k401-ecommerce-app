@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using K401Ecommerce.Core.DataAccess.EntityFramework;
 using K401Ecommerce.Core.Utilities.Results.Abstract;
 using K401Ecommerce.Core.Utilities.Results.Concrete;
@@ -56,8 +57,10 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
         {
             using var context = new AppDbContext();
 
+            int nextPage = (pageNo-1) * take;
 
-            var result = context.Products.Where(x => x.Price >= minPrice && x.Price <= maxPrice).Select(x=> new ProductFilterDTO
+
+            var result = context.Products.Where(x => x.Price >= minPrice && x.Price <= maxPrice && (categoryIds.Any() == false ? null==null : categoryIds.Contains(x.CategoryId))).Select(x=> new ProductFilterDTO
             {
                 Id = x.Id,
                 Name = x.ProductLanguages.FirstOrDefault(y=>y.LangCode==langcode).Name,
@@ -65,7 +68,7 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
                 PhotoUrl = x.Pictures.FirstOrDefault().PhotoUrl,
                 Price= x.Price,
                 Discount = x.Discount
-            }).Skip(pageNo).Take(take).ToList();
+            }).Skip(nextPage).Take(take).ToList();
 
             return result;
         }
@@ -101,6 +104,13 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
                     PhotoUrls  = x.Pictures.Where(a=>a.ProductId == x.Id).Select(x=>x.PhotoUrl).ToList(),
                     Price = x.Price
                 }).FirstOrDefault();
+            return result;
+        }
+
+        public int GetProductCount(double take, List<int> cats)
+        {
+            using var context = new AppDbContext();
+            var result = context.Products.Where(x => cats.Any() == false ? null == null : cats.Contains(x.CategoryId)).Take((int)take).Count();
             return result;
         }
 

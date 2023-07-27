@@ -28,6 +28,7 @@
     <None Remove="Areas\Admin\Views\Product\" />
     <None Remove="ViewModels\" />
     <None Remove="Views\Product\" />
+    <None Remove="Views\Shared\Components\ProductFilter\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -47,6 +48,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Product\" />
     <Folder Include="wwwroot\uploads\" />
+    <Folder Include="Views\Shared\Components\ProductFilter\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\" />

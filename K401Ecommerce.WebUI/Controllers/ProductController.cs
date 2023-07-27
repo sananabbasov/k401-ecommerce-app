@@ -13,23 +13,27 @@ namespace K401Ecommerce.WebUI.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
+            _categoryService = categoryService;
         }
 
         // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult Index(List<int> cats, int page = 1)
         {
 
-            List<int> cats = new();
-
-            cats.Add(3);
-            cats.Add(4);
-            cats.Add(5);
-            var filter = _productService.GetFilterProductsByLanguage("az-Az",0,100000, cats,0,5);
-            return View();
+            ViewBag.CurrentPage = page;
+            var filter = _productService.GetFilterProductsByLanguage("az-Az",0,100000, cats, page,5);
+            var categories = _categoryService.GetCategoriesForFilter("Az");
+            ProductFilterVM vm = new()
+            {
+                ProductFilters = filter.Data.ToList(),
+                Categories = categories.Data
+            };
+            return View(vm);
         }
 
         public IActionResult Detail(int id)
@@ -42,6 +46,32 @@ namespace K401Ecommerce.WebUI.Controllers
             };
 
             return View(vm);
+        }
+
+
+
+        public JsonResult GetDatas(int take, int page, string categoryList)
+        {
+            var categories = _categoryService.GetCategoriesForFilter("Az");
+            var cats = new List<int>();
+            if (categoryList == null)
+            {
+                cats = categories.Data.Select(x => x.Id).ToList();
+            }
+            else
+            {
+                cats = categoryList.Split(",").Select(x => Convert.ToInt32(x)).ToList();
+            }
+            var test = cats;
+            var filter = _productService.GetFilterProductsByLanguage("az-Az", 0, 100000, cats, page, take);
+            var productCount = _productService.GetProductCount(take, cats).Data;
+
+            PaginationVM vM = new()
+            {
+                ProductCount = productCount,
+                Products= filter.Data
+            };
+            return Json(vM);
         }
     }
 }
