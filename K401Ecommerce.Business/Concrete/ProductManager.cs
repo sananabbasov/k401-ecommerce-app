@@ -4,6 +4,7 @@ using K401Ecommerce.Business.Abstract;
 using K401Ecommerce.Core.Utilities.Results.Abstract;
 using K401Ecommerce.Core.Utilities.Results.Concrete;
 using K401Ecommerce.DataAccess.Abstract;
+using K401Ecommerce.Entities.DTOs.CartDTOs;
 using K401Ecommerce.Entities.DTOs.ProductDTOs;
 using static K401Ecommerce.Entities.DTOs.ProductDTOs.ProductDTO;
 
@@ -58,7 +59,7 @@ namespace K401Ecommerce.Business.Concrete
         {
             try
             {
-                var result = _productDal.FilterProducts(langcode,minPrice,maxPrice, categoryIds,pageNo,take);
+                var result = _productDal.FilterProducts(langcode, minPrice, maxPrice, categoryIds, pageNo, take);
                 return new SuccessDataResult<IEnumerable<ProductFilterDTO>>(result);
             }
             catch (Exception ex)
@@ -70,8 +71,8 @@ namespace K401Ecommerce.Business.Concrete
         public IDataResult<int> GetProductCount(double take, List<int> cats)
         {
 
-            double productCountResult = _productDal.GetProductCount(take,cats) / take;
-            int  productCount = (int)Math.Ceiling(productCountResult);
+            double productCountResult = _productDal.GetProductCount(take, cats) / take;
+            int productCount = (int)Math.Ceiling(productCountResult);
             return new SuccessDataResult<int>(productCount);
         }
 
@@ -86,6 +87,23 @@ namespace K401Ecommerce.Business.Concrete
             {
                 return new ErrorDataResult<ProductDetailDTO>(ex.Message);
             }
+        }
+
+        public IDataResult<List<UserCartDTO>> GetProductForCart(List<int> id, string langcode, List<int> quantity)
+        {
+            var result = _productDal.GetUserCart(id, langcode);
+            for (int i = 0; i < result.Count(); i++)
+            {
+                result[i].Quantity = quantity[i];
+            }
+            return new SuccessDataResult<List<UserCartDTO>>(result);
+        }
+
+        public IDataResult<int> GetProductQuantityById(int productId)
+        {
+            var productCount = _productDal.Get(x=>x.Id == productId).Quantity;
+
+            return new SuccessDataResult<int>(productCount);
         }
     }
 }

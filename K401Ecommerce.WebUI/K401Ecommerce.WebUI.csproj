@@ -29,6 +29,7 @@
     <None Remove="ViewModels\" />
     <None Remove="Views\Product\" />
     <None Remove="Views\Shared\Components\ProductFilter\" />
+    <None Remove="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -49,10 +50,15 @@
     <Folder Include="Views\Product\" />
     <Folder Include="wwwroot\uploads\" />
     <Folder Include="Views\Shared\Components\ProductFilter\" />
+    <Folder Include="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\" />
     <Content Remove="wwwroot\admin\" />
     <Content Remove="wwwroot\uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 </Project>

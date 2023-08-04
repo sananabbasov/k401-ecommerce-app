@@ -9,14 +9,26 @@
   <ItemGroup>
     <None Remove="Abstract\" />
     <None Remove="Concrete\" />
+    <None Remove="AutoMapper\" />
+    <None Remove="Constants\" />
+    <None Remove="DependencyResolver\" />
+    <None Remove="DependencyResolver\DependencyRegister\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Constants\" />
+    <Folder Include="DependencyResolver\" />
+    <Folder Include="DependencyResolver\DependencyRegister\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\K401Ecommerce.DataAccess\K401Ecommerce.DataAccess.csproj" />
     <ProjectReference Include="..\K401Ecommerce.Core\K401Ecommerce.Core.csproj" />
     <ProjectReference Include="..\K401Ecommerce.Entities\K401Ecommerce.Entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 </Project>

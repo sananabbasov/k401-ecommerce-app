@@ -66,7 +66,7 @@
                     @foreach (var cats in Model.Categories)
                     {
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                            <input type="checkbox" value="@cats.Id" class="custom-control-input checkedCats" id="color-all-@cats.Id">
+                            <input onclick="GetProductCategory()" type="checkbox" value="@cats.Id" class="custom-control-input checkedCats" id="color-all-@cats.Id">
                             <label class="custom-control-label" for="color-all-@cats.Id">@cats.CategoryName</label>
                             <span class="badge border font-weight-normal">1000</span>
                         </div>
@@ -140,9 +140,9 @@
                                     <a class="dropdown-item" href="#">30</a>
                                 </div>
                                 <select onchange="GetProductCount()" id="ddlViewBy">
-                                    <option value="1" class="dropdown-item">1</option>
-                                    <option value="4" class="dropdown-item">4</option>
-                                    <option value="15" class="dropdown-item">15</option>
+                                    <option value="5" class="dropdown-item">5</option>
+                                    <option value="10" class="dropdown-item">10</option>
+                                    <option value="20" class="dropdown-item">20</option>
                                 </select>
                             </div>
                         </div>
@@ -179,12 +179,14 @@
         let pageItem = document.querySelectorAll(".page-item")
         let cats = document.querySelectorAll(".checkedCats");
 
-  
 
 
         for (let i = 0; i < pageLink.length; i++) {
             pageLink[i].addEventListener('click', function () {
-                GetFilteredData(5, pageLink[i].innerText)
+                let lsData = JSON.parse(localStorage.getItem("filter"))
+                lsData.page = pageLink[i].innerText
+                localStorage.setItem("filter", JSON.stringify(lsData));
+                GetFilteredData()
             })
 
             pageItem[i].addEventListener('click', function () {
@@ -199,30 +201,34 @@
 
 
         //console.log(pageLink[3].innerText)
-        function GetPage(num) {
-            console.log(num)
+        function GetPage(num, page) {
+            let lsData = JSON.parse(localStorage.getItem("filter"))
+            lsData.page = page
+            localStorage.setItem("filter", JSON.stringify(lsData));
+            GetFilteredData()
         }
 
         $(function () {
+            let filterData = {
+                take: 5,
+                page: 1,
+                category: ""
+            }
+            localStorage.setItem("filter", JSON.stringify(filterData));
             GetFilteredData(5, 1)
         });
 
 
-        function GetFilteredData(take, page) {
-            let catlist = "";
-            for (var i = 0; i < cats.length; i++) {
-                if (cats[i].checked) {
-                    catlist += cats[i].value+","
-                }
-            }
-            let c = catlist.substring(0,catlist.length-1)
+        function GetFilteredData() {
+            let lsData = JSON.parse(localStorage.getItem("filter"))
+            console.log(lsData)
             $.ajax({
                 type: 'GET',
                 contentType: "application/json",
-                url: `/Product/GetDatas?page=${page}&take=${take}&categoryList=${c}&price=23`,
+                url: `/Product/GetDatas?page=${lsData.page}&take=${lsData.take}&categoryList=${lsData.category}&price=23`,
                 success: function (e) {
                     console.log(e)
-                    ProductList(e.products, e.productCount, take)
+                    ProductList(e.products, e.productCount, lsData.take)
                 }
             })
         }
@@ -230,8 +236,10 @@
         function GetProductCount() {
             var e = document.getElementById("ddlViewBy");
             var value = e.options[e.selectedIndex].value
-
-            GetFilteredData(value, 1)
+            let lsData = JSON.parse(localStorage.getItem("filter"))
+            lsData.take = value
+            localStorage.setItem("filter", JSON.stringify(lsData));
+            GetFilteredData()
         }
 
        
@@ -284,13 +292,25 @@
 
                 pagination.innerHTML +=
                 `
-                 <li class="page-item"><a onclick="GetFilteredData(${take}, ${i + 1})" class="page-link">${i+1}</a></li>
+                 <li class="page-item"><a onclick="GetPage(${take}, ${i + 1})" class="page-link">${i+1}</a></li>
                 `
             }
         }
 
 
-
+        function GetProductCategory() {
+            let catlist = "";
+            for (var i = 0; i < cats.length; i++) {
+                if (cats[i].checked) {
+                    catlist += cats[i].value + ","
+                }
+            }
+            let c = catlist.substring(0, catlist.length - 1)
+            let lsData = JSON.parse(localStorage.getItem("filter"))
+            lsData.category = c
+            localStorage.setItem("filter", JSON.stringify(lsData));
+            GetFilteredData()
+        }
                
 
     

@@ -1,4 +1,6 @@
-﻿using K401Ecommerce.Business.Abstract;
+﻿using AutoMapper;
+using K401Ecommerce.Business.Abstract;
+using K401Ecommerce.Business.AutoMapper;
 using K401Ecommerce.Business.Concrete;
 using K401Ecommerce.DataAccess.Abstract;
 using K401Ecommerce.DataAccess.Abstract.DataSeeding;
@@ -7,6 +9,7 @@ using K401Ecommerce.DataAccess.Concrete.EntityFramework;
 using K401Ecommerce.DataAccess.Concrete.SqlLite;
 using K401Ecommerce.Entities.Concrete;
 using Microsoft.AspNetCore.Identity;
+using K401Ecommerce.Business.DependencyResolver.DependencyRegister;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,19 +20,7 @@ builder.Services.AddDefaultIdentity<User>().AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>();
 
 
-
-builder.Services.AddScoped<ICategoryService, CategoryManager>();
-builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
-
-builder.Services.AddScoped<IProductService, ProductManager>();
-builder.Services.AddScoped<IProductDal, EfProductDal>();
-
-
-builder.Services.AddScoped<IDataSeeder, EfDataSeeder>();
-
-builder.Services.AddScoped<AppDbContext>();
-
-
+builder.Services.Create();
 
 var app = builder.Build();
 

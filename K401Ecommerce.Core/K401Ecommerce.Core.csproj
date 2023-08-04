@@ -16,6 +16,7 @@
     <None Remove="Utilities\Results\Abstract\" />
     <None Remove="Utilities\Results\Concrete\" />
     <None Remove="Utilities\SeoHelpers\" />
+    <None Remove="Utilities\Business\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -27,6 +28,7 @@
     <Folder Include="Utilities\Results\Abstract\" />
     <Folder Include="Utilities\Results\Concrete\" />
     <Folder Include="Utilities\SeoHelpers\" />
+    <Folder Include="Utilities\Business\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.7" />

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "b4J6d/VL/7PP/24XtwHsR8ChzQe2cSBPrkIkHcRsx3V7uKXIST1VCdB9oH4gxqi9WyF2iM8TaERM4Sek0D2uvA==",
+  "dgSpecHash": "MxiC2QlKiBzMn7iRYkU/+8bB7Fbtyz1irTy31Y8Ng1RZaLSBZupBC2Brfm6b1DT4ZoRP4wv4e4JwJjGjfGxsNA==",
   "success": true,
   "projectFilePath": "/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Business/K401Ecommerce.Business.csproj",
   "expectedPackageFiles": [
+    "/Users/sanan/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/sanan/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/sanan/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.7/microsoft.aspnetcore.cryptography.internal.7.0.7.nupkg.sha512",
@@ -11,7 +13,7 @@
     "/Users/sanan/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.7/microsoft.aspnetcore.identity.entityframeworkcore.7.0.7.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.aspnetcore.identity.ui/7.0.7/microsoft.aspnetcore.identity.ui.7.0.7.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/Users/sanan/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/sanan/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.data.sqlclient/5.0.2/microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.0.1/microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.entityframeworkcore/7.0.7/microsoft.entityframeworkcore.7.0.7.nupkg.sha512",

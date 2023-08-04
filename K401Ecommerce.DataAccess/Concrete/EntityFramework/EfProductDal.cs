@@ -6,6 +6,7 @@ using K401Ecommerce.Core.Utilities.Results.Concrete;
 using K401Ecommerce.Core.Utilities.SeoHelpers;
 using K401Ecommerce.DataAccess.Abstract;
 using K401Ecommerce.Entities.Concrete;
+using K401Ecommerce.Entities.DTOs.CartDTOs;
 using K401Ecommerce.Entities.DTOs.ProductDTOs;
 using Microsoft.EntityFrameworkCore;
 using static K401Ecommerce.Entities.DTOs.ProductDTOs.ProductDTO;
@@ -110,7 +111,7 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
         public int GetProductCount(double take, List<int> cats)
         {
             using var context = new AppDbContext();
-            var result = context.Products.Where(x => cats.Any() == false ? null == null : cats.Contains(x.CategoryId)).Take((int)take).Count();
+            var result = context.Products.Where(x => cats.Any() == false ? null == null : cats.Contains(x.CategoryId)).Count();
             return result;
         }
 
@@ -142,6 +143,20 @@ namespace K401Ecommerce.DataAccess.Concrete.EntityFramework
             {
                 return new ErrorDataResult<List<ProductAdminListDTO>>(ex.Message);
             }
+        }
+
+        public List<UserCartDTO> GetUserCart(List<int> id, string langcode)
+        {
+            using var context = new AppDbContext();
+
+            var result = context.Products.Where(x=>id.Contains(x.Id)).Include(x=>x.ProductLanguages).Include(x=>x.Pictures).Select(x=> new UserCartDTO
+            {
+                Id = x.Id,
+                ProductName = x.ProductLanguages.FirstOrDefault(x=>x.LangCode == langcode).Name,
+                Price =x.Price,
+                PhotoUrl =x.Pictures.FirstOrDefault().PhotoUrl,
+            }).ToList();
+            return result;
         }
     }
 }
