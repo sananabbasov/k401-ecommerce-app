@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Shipping" xml:space="preserve">
+	  <value>Pulsuz Çatdırılma</value>
+	</data>
+	<data name="ShippingDescription" xml:space="preserve">
+	  <value>ABŞ sifarişləri və ya 200 dollar üstü sifarişlər üçün pulsuz çatdırılma</value>
+	</data>
+	<data name="Support" xml:space="preserve">
+	  <value>Dəstək</value>
+	</data>
+	<data name="SupportDescription" xml:space="preserve">
+	  <value>Günün 24 saati, həftənin 7 günü bizimlə əlaqə saxlayın</value>
+	</data>
+	<data name="DaysReturn" xml:space="preserve">
+	  <value>30 gün Geri Qaytar</value>
+	</data>
+	<data name="DaysReturnDescription" xml:space="preserve">
+	  <value>30 gün ərzində dəyişim üçün sadəcə qaytarın</value>
+	</data>
+	<data name="PaymentSecure" xml:space="preserve">
+	  <value>Təhlükəsiz Ödəniş</value>
+	</data>
+	<data name="PaymentSecureDescription" xml:space="preserve">
+	  <value>Günün 24 saati, həftənin 7 günü bizimlə əlaqə saxlayın</value>
+	</data>
+	<data name="TopCollection" xml:space="preserve">
+	  <value>Bizim Ən Yaxşı Kolleksiyamız</value>
+	</data>
+	<data name="AllCollection" xml:space="preserve">
+	  <value>Bütün Kolleksiyaları Görüntüləyin</value>
+	</data>
+	<data name="Information" xml:space="preserve">
+	  <value>Məlumat</value>
+	</data>
+	<data name="Account" xml:space="preserve">
+	  <value>Hesab</value>
+	</data>
+	<data name="Services" xml:space="preserve">
+	  <value>Xidmətlər</value>
+	</data>
+	<data name="NewsLetter" xml:space="preserve">
+	  <value>Bülleten</value>
+	</data>
+	<data name="SearchProduct" xml:space="preserve">
+	  <value>Məhsulları axtar...</value>
+	</data>
+	<data name="Language" xml:space="preserve">
+	  <value>Dil</value>
+	</data>
+	<data name="Azerbaijan" xml:space="preserve">
+	  <value>Azərbaycan</value>
+	</data>
+	<data name="English" xml:space="preserve">
+	  <value>İngilis</value>
+	</data>
+	<data name="Russian" xml:space="preserve">
+	  <value>Rus</value>
+	</data>
+	<data name="Support" xml:space="preserve">
+	  <value>Günün 24 saati, həftənin 7 günü bizimlə əlaqə saxlayın</value>
+	</data>
+
+</root>

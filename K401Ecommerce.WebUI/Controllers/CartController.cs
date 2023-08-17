@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
 using K401Ecommerce.Business.Abstract;
 using K401Ecommerce.Entities.DTOs.CartDTOs;
+using K401Ecommerce.Entities.DTOs.OrderDTOs;
+using K401Ecommerce.WebUI.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,11 +19,15 @@ namespace K401Ecommerce.WebUI.Controllers
     {
         private readonly IHttpContextAccessor _httpContext;
         private readonly IProductService _productService;
+        private readonly IUserService _userService;
+        private readonly IOrderService _orderService;
 
-        public CartController(IHttpContextAccessor httpContext, IProductService productService)
+        public CartController(IHttpContextAccessor httpContext, IProductService productService, IUserService userService, IOrderService orderService)
         {
             _httpContext = httpContext;
             _productService = productService;
+            _userService = userService;
+            _orderService = orderService;
         }
 
         public JsonResult AddToCart(string id, int quantity)
@@ -41,7 +48,7 @@ namespace K401Ecommerce.WebUI.Controllers
             };
             if (check == null)
             {
-                
+
                 cartCookies.Add(cookieDTO);
                 var cookieJson = JsonSerializer.Serialize<List<CartCookieDTO>>(cartCookies);
                 Response.Cookies.Append("cart", cookieJson, cookieOptions);
@@ -49,7 +56,7 @@ namespace K401Ecommerce.WebUI.Controllers
             else
             {
                 var data = JsonSerializer.Deserialize<List<CartCookieDTO>>(check);
-                var findData = data.FirstOrDefault(x=>x.Id == Convert.ToInt32(id));
+                var findData = data.FirstOrDefault(x => x.Id == Convert.ToInt32(id));
                 if (findData != null)
                 {
                     findData.Quantity += 1;
@@ -122,6 +129,62 @@ namespace K401Ecommerce.WebUI.Controllers
         {
             return View();
         }
+
+        public IActionResult Checkout()
+        {
+            if (!User.Identity.IsAuthenticated)
+                return RedirectToAction("Login", "Auth");
+
+            var userId = _httpContext.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+
+            var user = _userService.GetUserById(userId).Data;
+
+            var check = Request.Cookies["cart"];
+            var data = JsonSerializer.Deserialize<List<CartCookieDTO>>(check);
+            var quantity = data.Select(x => x.Quantity).ToList();
+            var dataIds = data.Select(x => x.Id).ToList();
+            var result = _productService.GetProductForCart(dataIds, "az-Az", quantity).Data;
+
+            CheckoutVM vm = new()
+            {
+                User = user,
+                CartItems = result
+            };
+
+            return View(vm);
+        }
+
+
+        [HttpPost]
+        public IActionResult Checkout(string id)
+        {
+            var userId = _httpContext.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var check = Request.Cookies["cart"];
+            var data = JsonSerializer.Deserialize<List<CartCookieDTO>>(check);
+            var quantity = data.Select(x => x.Quantity).ToList();
+            var dataIds = data.Select(x => x.Id).ToList();
+            var result = _productService.GetProductForCart(dataIds, "az-Az", quantity).Data;
+
+            List<CreateOrderDTO> createOrders = new();
+
+            foreach (var cartItem in result)
+            {
+                CreateOrderDTO orderDTO = new()
+                {
+                    UserId = userId,
+                    ProductId = cartItem.Id,
+                    ProductPrice = cartItem.Price,
+                    ProductQuantity = cartItem.Quantity,
+                    Message = "Yoxdu"
+                };
+                createOrders.Add(orderDTO);
+            }
+
+            _orderService.CreateOrder(createOrders);
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }
 

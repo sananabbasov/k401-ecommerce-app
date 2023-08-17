@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject LanguageService language
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -67,9 +68,9 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">EN</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">FR</button>
-                            <button class="dropdown-item" type="button">AR</button>
-                            <button class="dropdown-item" type="button">RU</button>
+                            <a class="dropdown-item" asp-controller="Language" asp-action="Change" asp-route-culture="az">@language.Getkey("Azerbaijan")</a>
+                            <a class="dropdown-item" asp-controller="Language" asp-action="Change" asp-route-culture="en-US">@language.Getkey("English")</a>
+                            <a class="dropdown-item" asp-controller="Language" asp-action="Change" asp-route-culture="ru-Ru">@language.Getkey("Russian")</a>
                         </div>
                     </div>
                 </div>

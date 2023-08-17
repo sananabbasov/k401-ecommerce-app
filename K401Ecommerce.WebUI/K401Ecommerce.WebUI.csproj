@@ -30,6 +30,9 @@
     <None Remove="Views\Product\" />
     <None Remove="Views\Shared\Components\ProductFilter\" />
     <None Remove="Views\Cart\" />
+    <None Remove="Resources\" />
+    <None Remove="Helpers\" />
+    <None Remove="Helpers\LanguageSettings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -51,6 +54,9 @@
     <Folder Include="wwwroot\uploads\" />
     <Folder Include="Views\Shared\Components\ProductFilter\" />
     <Folder Include="Views\Cart\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\LanguageSettings\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\assets\" />
@@ -60,5 +66,30 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\SharedResource.az.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResource.az.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\SharedResource.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResource.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\SharedResource.ru-RU.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResource.ru-RU.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\SharedResource.az.Designer.cs">
+      <DependentUpon>SharedResource.az.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\SharedResource.en-US.Designer.cs">
+      <DependentUpon>SharedResource.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\SharedResource.ru-RU.Designer.cs">
+      <DependentUpon>SharedResource.ru-RU.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

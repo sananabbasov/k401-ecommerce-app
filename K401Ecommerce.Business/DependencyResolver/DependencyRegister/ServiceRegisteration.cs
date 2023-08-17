@@ -24,6 +24,9 @@ namespace K401Ecommerce.Business.DependencyResolver.DependencyRegister
             services.AddScoped<IOrderService, OrderManager>();
             services.AddScoped<IOrderDal, EfOrderDal>();
 
+            services.AddScoped<IUserService, UserManager>();
+            services.AddScoped<IUserDal, EfUserDal>();
+
             services.AddScoped<IDataSeeder, EfDataSeeder>();
 
             services.AddScoped<AppDbContext>();

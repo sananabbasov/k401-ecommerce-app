@@ -22,6 +22,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        var langcode = Request.Cookies["Ecommerce"];
+        if (Request.Cookies["Ecommerce"] == null)
+        {
+            langcode = "az";
+        }
+        var lang = langcode == "az" ? "az" : langcode == "en-US" ? "en" : "ru";
+
         var categories = _categoryService.GetHomeFeaturedCategoriesByLanguage("Ru");
         var featuredProducts = _productService.GetAllFeaturedProduct("az-Az");
         var recentProducts = _productService.GetAllRecentProduct("az-Az");

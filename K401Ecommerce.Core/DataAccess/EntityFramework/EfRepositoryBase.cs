@@ -31,7 +31,6 @@ namespace K401Ecommerce.Core.DataAccess.EntityFramework
             return context.Set<TEntity>().SingleOrDefault(filter);
             
         }
-
         public List<TEntity> GetAll(Expression<Func<TEntity, bool>>? filter = null)
         {
             using TContext context = new();

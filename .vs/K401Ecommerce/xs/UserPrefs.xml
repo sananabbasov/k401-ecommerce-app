@@ -1,43 +1,36 @@
 ﻿<Properties StartupConfiguration="{CE63BC64-CB19-4769-877D-6E8F081441D6}|https">
-  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.WebUI/Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="K401Ecommerce.DataAccess/Concrete/EntityFramework/AppDbContext.cs">
     <Files>
-      <File FileName="K401Ecommerce.Entities/Concrete/Order.cs" Line="7" Column="2" />
-      <File FileName="K401Ecommerce.DataAccess/Abstract/IOrderDal.cs" Line="10" Column="1" />
-      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/EfOrderDal.cs" Line="13" Column="9" />
-      <File FileName="K401Ecommerce.Business/Abstract/IOrderService.cs" Line="7" Column="19" />
-      <File FileName="K401Ecommerce.Entities/DTOs/OrderDTOs/CreateOrderDTO.cs" Line="8" Column="6" />
-      <File FileName="K401Ecommerce.Business/Concrete/OrderManager.cs" Line="37" Column="32" />
-      <File FileName="K401Ecommerce.WebUI/Program.cs" Line="23" Column="1" />
-      <File FileName="K401Ecommerce.Business/AutoMapper/MappingProfile.cs" Line="12" Column="39" />
-      <File FileName="K401Ecommerce.Entities/Concrete/User.cs" Line="6" Column="25" />
-      <File FileName="K401Ecommerce.Core/Entities/AppUser.cs" Line="6" Column="34" />
-      <File FileName="K401Ecommerce.Business/Abstract/IProductService.cs" Line="26" Column="62" />
-      <File FileName="K401Ecommerce.Business/Concrete/ProductManager.cs" Line="102" Column="55" />
-      <File FileName="K401Ecommerce.Core/Utilities/Business/BusinessRule.cs" Line="15" Column="44" />
-      <File FileName="K401Ecommerce.Business/Constants/Messages.cs" Line="4" Column="15" />
-      <File FileName="K401Ecommerce.Business/DependencyResolver/DependencyRegister/ServiceRegisteration.cs" Line="25" Column="50" />
+      <File FileName="K401Ecommerce.Core/DataAccess/IRepositoryBase.cs" />
+      <File FileName="K401Ecommerce.Core/DataAccess/EntityFramework/EfRepositoryBase.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Business/BusinessRule.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Abstract/IResult.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Abstract/IDataResult.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/DataResult.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/ErrorDataResult.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/ErrorResult.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/Result.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/SuccessDataResult.cs" />
+      <File FileName="K401Ecommerce.Core/Utilities/Results/Concrete/SuccessResult.cs" />
+      <File FileName="K401Ecommerce.DataAccess/Concrete/EntityFramework/AppDbContext.cs" Line="14" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="K401Ecommerce" expanded="True">
-            <Node name="K401Ecommerce.Business">
-              <Node name="DependencyResolver" expanded="True" />
-            </Node>
-            <Node name="K401Ecommerce.WebUI">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="K401Ecommerce" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Business/Concrete/OrderManager.cs" relfile="K401Ecommerce.Business/Concrete/OrderManager.cs" line="45" column="1" />
+      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K401/C#/Web/K401Ecommerce/K401Ecommerce.Business/Concrete/OrderManager.cs" relfile="K401Ecommerce.Business/Concrete/OrderManager.cs" line="57" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.K401Ecommerce.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
